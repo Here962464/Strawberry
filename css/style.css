@@ -1,0 +1,404 @@
+*{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+html{
+	font-family: "微软雅黑";
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	color: rgb(135,136,204);
+}
+/*logo部分*/
+.top{
+	width: 100%;
+	height: 140px;
+}
+.top .box{
+	width: 1000px;
+	height: 140px;
+	margin: 0 auto;
+	background: url(../img/t-logo2.png) no-repeat 650px 0px;
+}
+.top .box h1{
+	width: 460px;
+	height: 120px;
+	margin-top: 5px;
+	background: url(../img/t-logo1.png) no-repeat;
+	float: left;
+}
+/*导航部分*/
+.menu{
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+	background: rgb(45,118,0);
+}
+.menu ul{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.menu ul li{
+	width: 166px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;	
+}
+.menu ul li.green{
+	background: rgb(65,158,7);
+}
+/*下拉菜单*/
+.menu ul li div{
+	width: 166px;
+	display: none;
+	height: 250px;
+	z-index: 100;
+	position: absolute;
+}
+.menu ul li div a{
+	color: #fff;
+}
+.menu #trends dl dd,.menu #know dl dd{
+	margin-top: 3px;
+	background: rgba(45,118,0,0.9);
+}
+/*banner*/
+.banner{
+	width: 1440px;
+	height: 330px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.banner .back{
+	width: 5760px;
+	height: 330px;	
+}
+.banner .back li{	
+	width: 1440px;
+	height: 330px;
+	float: left;
+}
+.banner dl{
+	width: 140px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	z-index: 100;
+	margin-left: -70px;
+	bottom: 10px;
+}
+.banner dl dd{
+	width: 15px;
+	height: 16px;
+	float: left;
+	background:url(../img/spot-out.png) no-repeat;
+	margin-right: 10px;
+}
+.banner dl dd.selected{
+	background: url(../img/spot-on.png) no-repeat;
+}
+/*content部分*/
+.content{
+	width: 1000px;
+	font-size: 12px;
+	height: 1280px;
+	margin: 0 auto;
+}
+/*第一层*/
+.content .news{
+	width: 700px;
+	height: 275px;
+	margin-top: 10px;
+	float: left;
+	border: 1px solid rgb(219,219,219);
+}
+.content .news .slideshow{
+	width: 320px;
+	height: 240px;
+	position: relative;
+	margin: 20px;
+	float: left;
+	overflow: hidden;
+}
+.content .news .slideshow .pic{
+	width: 1280px;
+	height: 240px;
+}
+.content .news .slideshow .pic li{
+	width: 320px;
+	height: 240px;
+	float: left;
+	position: relative;
+	background: url(../img/flash.png) no-repeat;
+}
+.content .news .slideshow .pic li p{
+	height: 30px;
+	width: 314px;
+	padding-left: 5px;
+	line-height: 30px;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.content .news .slideshow .left{
+	width: 30px;
+	height: 34px;
+	position: absolute;
+	left: 5px;
+	top: 100px;
+	background: url(../img/left.png) no-repeat;
+}
+.content .news .slideshow .right{
+	width: 30px;
+	height: 34px;
+	position: absolute;
+	right: 5px;
+	top: 100px;
+	background: url(../img/right.png) no-repeat;
+}
+.content .news .text{
+	float: left;
+	width: 330px;
+}
+.content .news .text li{
+	width: 315px;
+	height: 50px;
+	overflow: hidden;
+	padding-left: 15px;
+	background: url(../img/li-img.png) no-repeat 0px 11px;
+	border-bottom: 1px dotted rgb(219,219,219);
+}
+.content .news .text .title{
+	width: 330px;
+	font-size: 18px;
+	line-height: 50px;
+	padding-left: 0;
+	background: url(../img/underline.png) no-repeat 0px 47px;
+	border-bottom: 1px solid rgb(219,219,219);
+}
+.content .news .text .title div{
+	width: 240px;
+	height: 50px;
+	font-size: 14px;
+	float: right;
+	position: relative;
+	color: rgb(173,173,173);
+}
+.content .news .text .title div span{
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+.content .news .text li p{
+	height: 25px;
+	line-height: 30px;
+	background: url(../img/news.png) no-repeat 80px 9px;
+}
+.content .notice,.content .product,.content .technology{
+	width: 285px;
+	height: 275px;
+	float: right;
+	border: 1px solid rgb(219,219,219);
+	margin-top: 10px;
+}
+.content .notice .board,.content .product .board,.content .technology .board{
+	margin: auto;
+	width: 270px;
+	overflow: hidden;
+}
+.content .notice .board li,.content .product .board li,.content .technology .board li{
+	width: 255px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	background: url(../img/li-img.png) no-repeat 0px 13px;
+	border-bottom: 1px dotted rgb(219,219,219);
+}
+.content .notice .board .lead,.content .product .board .lead,.content .technology .board .lead{
+	width: 270px;
+	height: 45px;
+	font-size: 18px;
+	line-height: 45px;
+	padding-left: 0;
+	background: url(../img/underline.png) no-repeat 0px 42px;
+	border-bottom: 1px solid rgb(219,219,219);
+}
+.content .notice .board .lead span,.content .dynamics .board .lead span,.content .information .board .lead span,.content .product .board .lead span{
+	float: right;
+	color: rgb(173,173,173);
+	font-size: 14px;	
+}
+/*第二层*/
+.content .dynamics,.content .information,.content .membership,.content .experience{
+	width: 344px;
+	height: 275px;
+	float: left;
+	border: 1px solid rgb(219,219,219);
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.content .dynamics .board,.content .information .board,.content .membership .board,.content .experience .board{
+	width: 330px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+.content .dynamics .board li,.content .information .board li,.content .membership .board li,.content .experience .board li{
+	width: 330px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	background: url(../img/li-img.png) no-repeat 0px 13px;
+	border-bottom: 1px dotted rgb(219,219,219);
+}
+.content .dynamics .board li span,.content .information .board li span,.content .membership .board li span,.content .experience .board li span{
+	position: absolute;
+	right: 0;
+}
+.content .dynamics .board .lead,.content .information .board .lead,.content .membership .board .lead,.content .experience .board .lead{
+	width: 330px;
+	height: 45px;
+	font-size: 18px;
+	line-height: 45px;
+	padding-left: 0;
+	background: url(../img/underline.png) no-repeat 0px 42px;
+	border-bottom: 1px solid rgb(219,219,219);
+}
+.content .product{
+	position: relative;
+}
+.content .product img{
+	width: 135px;
+	height: 215px;
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+/*小广告层*/
+.content .ad{
+	margin-top: 10px;
+	float: left;
+	width: 1000px;
+	height: 138px;
+	background: url(../img/ad.png) no-repeat;
+}
+/*第四层*/
+.content .membership .board .lead span,.content .experience .board .lead span,.content .technology .board .lead span,.content .technology .board li span{
+	float: right;
+	color: rgb(173,173,173);
+	font-size: 14px;
+}
+/*第五层*/
+.content .bottom{
+	width: 1000px;
+	height: 260px;
+	float: left;
+	margin-top: 10px;
+	overflow: hidden;
+	border: 1px solid rgb(219,219,219);
+}
+.content .bottom img{
+	margin-top: 20px;
+	float: left;
+}
+.content .bottom .membHome{
+	width: 314px;
+	height: 235px;
+	float: left;
+	padding-left: 12px;
+	border-left: 1px solid rgb(219,219,219);
+	margin-top: 15px;
+}
+.content .bottom .membHome li{
+	width: 285px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	position: relative;
+	background: url(../img/li-img.png) no-repeat 0px 13px;
+	border-bottom: 1px dotted rgb(219,219,219);
+}
+.content .bottom .membHome li span{
+	position: absolute;
+	right: 0;
+}
+.content .bottom .membHome .lead,.content .bottom .contact .lead{
+	width: 300px;
+	height: 45px;
+	font-size: 18px;
+	line-height: 45px;
+	padding-left: 0;
+	background: url(../img/underline.png) no-repeat 0px 42px;
+	border-bottom: 1px solid rgb(219,219,219);
+}
+.content .bottom .membHome .lead span,.content .bottom .contact .lead span{
+	float: right;
+	color: rgb(173,173,173);
+	font-size: 14px;
+}
+.content .bottom .contact{
+	width: 270px;
+	height: 235px;
+	float: left;
+	overflow: hidden;
+	padding-left: 4px;
+	border-left: 1px solid rgb(219,219,219);
+	margin-top: 15px;
+}
+.content .bottom .contact li{
+	width: 250px;
+	height: 35px;
+	margin-left: 10px;
+	line-height: 45px;
+}
+.content .bottom .contact .lead{
+	width: 250px;
+}
+/*foot部分*/
+.foot{
+	width: 1000px;
+	height: 190px;
+	margin: 0 auto;
+	font-size: 12px;
+	position: relative;
+	background: url(../img/b-logo.png) no-repeat 0 10px;
+}
+.foot ul{
+	position: absolute;
+	height: 15px;
+	top: 30px;
+	right: 0px;
+}
+.foot ul li{
+	width: 70px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	float: left;
+	border-right: 1px solid #000;
+}
+.foot ul li.no-border{
+	border-right: none;
+	margin-right: -10px;
+}
+.foot p{
+	width: 500px;
+	height: 60px;
+	line-height: 20px;
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	text-align: right;
+}
